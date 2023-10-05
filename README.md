@@ -5,39 +5,39 @@ The main code is thesan-mfp-hist-grid.cc. This code calculates the mean-free pat
 
 The output file contains the following datasets:
 
-"mfp_hist": 1D histogram of all ray lengths in units of cell lengths
-"mfp_hist_xHII": 2D histogram of log(ray length) and ionized fraction of initial cell
-"mfp_hist_logT": 2D histogram of log(ray length) and log(temperature) of initial cell
-"mfp_hist_logD": 2D histogram of log(ray length) and log(overdensity + 1) of initial cell
-"mfp_avgs": 3D array of bubble sizes calculated for each cell as the average length of the n_LOS rays per cell
+"mfp_hist": 1D histogram of all ray lengths in units of cell lengths \ 
+"mfp_hist_xHII": 2D histogram of log(ray length) and ionized fraction of initial cell \ 
+"mfp_hist_logT": 2D histogram of log(ray length) and log(temperature) of initial cell \ 
+"mfp_hist_logD": 2D histogram of log(ray length) and log(overdensity + 1) of initial cell \ 
+"mfp_avgs": 3D array of bubble sizes calculated for each cell as the average length of the n_LOS rays per cell \ 
 
-and the following "Header" attributes:
+and the following "Header" attributes: \ 
 
-"BoxSize": simulation box size
-"NumPixels": total number of cells
-"NumBins": number of bins in "mfp_hist"
-"NumBinsLogR": number of log(ray length) bins in "mfp_hist_xHII", "mfp_hist_logT", and "mfp_hist_logD"
-"NumBinsHII": number of ionized fraction bins in "mfp_hist_xHII"
-"NumBinsLogT": number of log(temperature) bins in "mfp_hist_logT"
-"NumBinsLogD": number of log(overdensity + 1) bins in "mfp_hist_logD"
-"MinLogR": minimum bin edge of log(ray length) in "mfp_hist_xHII", "mfp_hist_logT", and "mfp_hist_logD"
-"MaxLogR": maximum bin edge of log(ray length) in "mfp_hist_xHII", "mfp_hist_logT", and "mfp_hist_logD"
-"MinHII": minimum bin edge of ionized fraction in "mfp_hist_xHII"
-"MaxHII": maximum bin edge of ionized fraction in "mfp_hist_xHII"
-"MinLogT": minimum bin edge of log(temperature) bins in "mfp_hist_logT"
-"MaxLogT": maximum bin edge of log(temperature) bins in "mfp_hist_logT"
-"MinLogD": minimum bin edge of log(overdensity + 1) bins in "mfp_hist_logD"
-"MaxLogD": maximum bin edge of log(overdensity + 1) bins in "mfp_hist_logD"
-"NumExp": exponent used in number of HEALPix directions for each cell
-"NumDirections": number of lines of sight per cell (12 * 4^NumExp)
-"NumBinsPerCell": number of ray tracing bins per cell
-"NumLoopsPerBox": maximum number of box lengths a ray length can be
-"Time": scale factor
-"UnitLength_in_cm": length conversion to cm
-"UnitMass_in_g": mass conversion to g
-"UnitVelocity_in_cm_per_s": velocity conversion to cm/s
-"HubbleParam": H0 / (100 km/s/Mpc)
-"Omega0": fraction of dark matter + baryone
-"OmegaBaryon": fraction of baryons
-"OmegaLambda": fraction of cosmological constant
-"Redshift": redshift of snapshot
+"BoxSize": simulation box size \ 
+"NumPixels": total number of cells \ 
+"NumBins": number of bins in "mfp_hist" \ 
+"NumBinsLogR": number of log(ray length) bins in "mfp_hist_xHII", "mfp_hist_logT", and "mfp_hist_logD" \ 
+"NumBinsHII": number of ionized fraction bins in "mfp_hist_xHII" \ 
+"NumBinsLogT": number of log(temperature) bins in "mfp_hist_logT" \ 
+"NumBinsLogD": number of log(overdensity + 1) bins in "mfp_hist_logD" \ 
+"MinLogR": minimum bin edge of log(ray length) in "mfp_hist_xHII", "mfp_hist_logT", and "mfp_hist_logD" \ 
+"MaxLogR": maximum bin edge of log(ray length) in "mfp_hist_xHII", "mfp_hist_logT", and "mfp_hist_logD" \ 
+"MinHII": minimum bin edge of ionized fraction in "mfp_hist_xHII" \ 
+"MaxHII": maximum bin edge of ionized fraction in "mfp_hist_xHII" \ 
+"MinLogT": minimum bin edge of log(temperature) bins in "mfp_hist_logT" \ 
+"MaxLogT": maximum bin edge of log(temperature) bins in "mfp_hist_logT" \ 
+"MinLogD": minimum bin edge of log(overdensity + 1) bins in "mfp_hist_logD" \ 
+"MaxLogD": maximum bin edge of log(overdensity + 1) bins in "mfp_hist_logD" \ 
+"NumExp": exponent used in number of HEALPix directions for each cell \ 
+"NumDirections": number of lines of sight per cell (12 * 4^NumExp) \ 
+"NumBinsPerCell": number of ray tracing bins per cell \ 
+"NumLoopsPerBox": maximum number of box lengths a ray length can be \ 
+"Time": scale factor \ 
+"UnitLength_in_cm": length conversion to cm \ 
+"UnitMass_in_g": mass conversion to g \ 
+"UnitVelocity_in_cm_per_s": velocity conversion to cm/s \ 
+"HubbleParam": H0 / (100 km/s/Mpc) \ 
+"Omega0": fraction of dark matter + baryons \ 
+"OmegaBaryon": fraction of baryons \ 
+"OmegaLambda": fraction of cosmological constant \ 
+"Redshift": redshift of snapshot \ 
