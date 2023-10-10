@@ -1,6 +1,8 @@
 # mfp-bubbles-thesan
 Code used to calculate ionized bubbles sizes using the mean-free path (MFP) method for the THESAN simulations.
 
+Below is a brief overview of the code. See https://arxiv.org/abs/2310.03783 for more details.
+
 The main code is thesan-mfp-hist-grid.cc. This code calculates the mean-free path ionized bubble size in the THESAN simulations by performing second-order ray tracing over lines of sight isotropically distributed according to the HEALPix prescription for each simulation cell. The ray lengths are calculated to be the distances from the initial cell to the nearest neutral cell in the HEALPix-specified directions. If a cell is itself neutral, the bubble size in mfp_avgs is set to 0, and it does not contribute to the histograms. The run.sh script contains basic commands to compile and run the code on Mac laptops and on the MIT Engaging cluster. The output file is an hdf5 file created in the user-specified output directory. 
 
 The output file contains the following datasets:
