@@ -10,12 +10,13 @@ CFLAGS="-Xpreprocessor -fopenmp -std=c++14"
 IFLAGS=""
 LFLAGS="-lomp -lhdf5"
 
-# Engaging cluster (gcc)
+# # Engaging cluster (gcc)
+# module purge
 # module load gcc/9.3.0 openmpi/4.0.5
-#CC="mpicxx"
-#CFLAGS="-fopenmp -std=c++14"
-#IFLAGS="-I${HOME}/include"
-#LFLAGS="-Wl,-rpath,${HOME}/lib -L${HOME}/lib -lomp -lhdf5 -lz"
+# CC="mpicxx"
+# CFLAGS="-fopenmp -std=c++14 -O3"
+# IFLAGS=""
+# LFLAGS="-lhdf5 -lz"
 
 # Build executable
 compile () {
@@ -31,4 +32,5 @@ run () {
   ./$1 ../Thesan-1 output 54    # for example
 }
 
+# compile thesan-mfp-hist-grid
 run thesan-mfp-hist-grid
